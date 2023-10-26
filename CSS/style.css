@@ -4,20 +4,19 @@ body {
     background-color: #f8f9fa;
     font-family: 'Roboto', sans-serif;
 }
-
+a {
+    text-decoration: none;
+}
 
 /* HEADER */
 header {
     height: 70px;
-    background-color: #ffffff;
-}
-
-.desktop-logo {
-    height: 35px;
 }
 .mobile-logo {
-    display: none;
+    width: 50px;
+    height: 50px;
 }
+
 .fa-list,
 .fa-circle-question,
 .fa-ellipsis-vertical {
@@ -26,20 +25,22 @@ header {
 .fa-bell {
     color: #ff8f00;
 }
+/* Main */
+.main-container {
+    height: calc(100vh - 70px);
+}
+.sidebar {
+    background-color: #051e34;
+    background-image: url(../img/sidebar-bg.png);
+}
 
 /*************************************************
    RESPONSIVE
  *************************************************/
 
-@media screen and (max-width: 768px) {
-    .desktop-logo {
-        display: none;
-    }
-    .mobile-logo {
-        display: block;
-        height: 40px;
-    }
-    .d_none {
-        display: none;
+@media screen and (min-width: 992px) {
+    /* Main */
+    .sidebar {
+        width: 150px;
     }
 }
