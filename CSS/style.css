@@ -4,6 +4,7 @@ body {
     background-color: #f8f9fa;
     font-family: 'Roboto', sans-serif;
 }
+
 a {
     text-decoration: none;
 }
@@ -29,11 +30,22 @@ header {
 .main-container {
     height: calc(100vh - 70px);
 }
+/* Left sidebar */
 .sidebar {
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
 }
+/* Right-side */
+.right-side-top {
+    background-color: #1b72e8;
+}
+.right-side-bottom {
+    background-color: green;
+}
 
+.right-side-top .rr-badge {
+    background-color: rgba(0, 0, 0, 0.2);
+}
 /*************************************************
    RESPONSIVE
  *************************************************/
@@ -42,5 +54,8 @@ header {
     /* Main */
     .sidebar {
         width: 150px;
+    }
+    .rr-offcanvas {
+        max-width: 50%;
     }
 }
