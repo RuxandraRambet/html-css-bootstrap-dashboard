@@ -1,5 +1,45 @@
-/* DASHBOARD CONTAINER */
-.dashboard-container {
-    width: 100vw;
-    height: 100vh
+/* COMMON */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* HEADER */
+header {
+    height: 70px;
+    background-color: #ffffff;
+}
+
+.desktop-logo {
+    height: 35px;
+}
+.mobile-logo {
+    display: none;
+}
+.fa-list,
+.fa-circle-question,
+.fa-ellipsis-vertical {
+    color: #5b5858;
+}
+.fa-bell {
+    color: #ff8f00;
+}
+
+/*************************************************
+   RESPONSIVE
+ *************************************************/
+
+@media screen and (max-width: 768px) {
+    .desktop-logo {
+        display: none;
+    }
+    .mobile-logo {
+        display: block;
+        height: 40px;
+    }
+    .d_none {
+        display: none;
+    }
 }
