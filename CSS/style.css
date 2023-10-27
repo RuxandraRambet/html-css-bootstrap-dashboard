@@ -3,6 +3,7 @@
 body {
     background-color: #f8f9fa;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 
 a {
@@ -28,6 +29,7 @@ header {
 }
 /* Main */
 .main-container {
+    width: 100vw;
     height: calc(100vh - 70px);
 }
 /* Left sidebar */
@@ -35,16 +37,27 @@ header {
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
 }
+ul li:hover {
+    background-color: rgba(191, 184, 184, 0.8);
+    border: 1px currentColor;
+}
 /* Right-side */
 .right-side-top {
     background-color: #1b72e8;
 }
-.right-side-bottom {
-    background-color: green;
-}
 
 .right-side-top .rr-badge {
     background-color: rgba(0, 0, 0, 0.2);
+}
+.avatar {
+    width: 20px;
+}
+.rr-button {
+    color: #6c757d;
+    border: 1px solid #6c757d;
+}
+.rr-table-border {
+    border: 1px solid lightgray;
 }
 /*************************************************
    RESPONSIVE
@@ -58,4 +71,5 @@ header {
     .rr-offcanvas {
         max-width: 50%;
     }
+  
 }
